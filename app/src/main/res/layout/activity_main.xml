@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/yellow"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/FL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:gravity="center">
+            <Button
+                android:id="@+id/Button"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="Click me! \n and I change color"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/ET"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:hint="Type your text here"
+                android:text=""
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/LL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/TV"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:textColor="@color/black"
+                    android:text="@string/changecolor"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:gravity="center">
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/photo"
+                    android:layout_width="157dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/photo" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
